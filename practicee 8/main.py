@@ -40,7 +40,7 @@ def functions_menu(stdscr):
             elif current_row == 2:
                 functions.list_insert(stdscr)
             elif current_row == 3:
-                functions.deleting(stdscr)
+                functions.deleting_by_name(stdscr)
 
 def showing(stdscr):
     current_row = 0
