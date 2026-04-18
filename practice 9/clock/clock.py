@@ -7,7 +7,7 @@ pygame.display.set_caption("Clock")
 clock = pygame.time.Clock()
 running = True
 
-image = pygame.image.load(r"C:\Users\User\PycharmProjects\pythonProject5\clock.png").convert_alpha()
+image = pygame.image.load(r"C:\Users\User\Desktop\pp2rep\practice 9\clock\clock.png").convert_alpha()
 image = pygame.transform.scale(image, (860, 660))
 image_rect = image.get_rect(center=(400, 300))
 

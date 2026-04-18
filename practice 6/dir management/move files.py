@@ -3,7 +3,7 @@ a="demo_src"; s="demo_dst"; os.makedirs(a,exist_ok=True); os.makedirs(s,exist_ok
 
 m="demo_src2"; d="demo_dst2"; os.makedirs(m,exist_ok=True); os.makedirs(d,exist_ok=True); open(os.path.join(m,"data.csv"),"w").write("1,2,3"); shutil.move(os.path.join(m,"data.csv"),os.path.join(d,"data.csv")); print(os.listdir(d))
 
-q="demo_a"; w="demo_b"; os.makedirs(q,exist_ok=True); os.makedirs(w,exist_ok=True); open(os.path.join(q,"img.png"),"w").write("x"); shutil.copy2(os.path.join(q,"img.png"),os.path.join(w,"img.png")); print(os.listdir(w))
+q="demo_a"; w="demo_b"; os.makedirs(q,exist_ok=True); os.makedirs(w,exist_ok=True); open(os.path.join(q,"clock.png"),"w").write("x"); shutil.copy2(os.path.join(q,"clock.png"),os.path.join(w,"clock.png")); print(os.listdir(w))
 
 e="demo_c"; r="demo_d"; os.makedirs(e,exist_ok=True); os.makedirs(r,exist_ok=True); open(os.path.join(e,"log.txt"),"w").write("abc"); shutil.move(os.path.join(e,"log.txt"),r); print(os.listdir(r))
 
