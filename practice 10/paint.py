@@ -65,7 +65,7 @@ while running:
 
             elif drawing:
                 current = event.pos
-                pygame.draw.circle(screen,current_color,current, circle_rect.width)
+                pygame.draw.circle(screen,current_color,last, circle_rect.width)
                 last = current
         pygame.draw.rect(screen, (255, 255, 255), panel_rect)
         pygame.draw.rect(screen, (80, 80, 80), sidebar_rect)

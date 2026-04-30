@@ -80,11 +80,8 @@ while running:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if active == False and restart_rect.collidepoint(event.pos):
                 snake = Snake()
-                apple_rect = pygame.Rect(
-                    random.randrange(0, 800, 30),
-                    random.randrange(0, 600, 30),
-                    30, 30
-                )
+                apple_rect = pygame.Rect(random.randrange(0, 800, 30),
+                                         random.randrange(0, 600, 30),30, 30)
                 active = True
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT and snake.head().direction != "right":
